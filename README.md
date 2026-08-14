@@ -1,4 +1,3 @@
-- 👋 Hi, I’m GAYATHRI
 
 <p align="center">
   <img src="./assets/cyberpunk-scan.svg" width="900">
