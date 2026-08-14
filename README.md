@@ -5,10 +5,10 @@
 <table>
 <tr>
 
-<td width="40%" align="center">
+<td width="45%" align="center">
 
-<pre><small>
-                                                                                                                          
+<pre>
+                                                                                                                        
                                                                                                                         
                                                                                                                         
                                                                                                                         
@@ -71,11 +71,12 @@
                                                                                                                         
                                                                                                                         
 ascii.gg
-</small></pre>
+             
+</pre>
 
 </td>
 
-<td width="60%">
+<td width="55%">
 
 <pre>
 GAYATHRI
