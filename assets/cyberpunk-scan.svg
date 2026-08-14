@@ -1,3 +1,4 @@
+```xml
 <svg width="1000" height="420" viewBox="0 0 1000 420"
      xmlns="http://www.w3.org/2000/svg">
 
@@ -22,16 +23,16 @@
 
     <!-- Background gradient -->
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#050510"/>
-      <stop offset="50%" stop-color="#0b1020"/>
-      <stop offset="100%" stop-color="#050510"/>
+      <stop offset="0%" stop-color="#100505"/>
+      <stop offset="50%" stop-color="#200b0b"/>
+      <stop offset="100%" stop-color="#100505"/>
     </linearGradient>
 
     <!-- Scan line gradient -->
     <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00ffff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#00ffff"/>
-      <stop offset="100%" stop-color="#00ffff" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#ff0000" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff0000"/>
+      <stop offset="100%" stop-color="#ff0000" stop-opacity="0"/>
     </linearGradient>
 
   </defs>
@@ -41,7 +42,7 @@
   <rect width="1000" height="420"
         rx="20"
         fill="url(#bg)"
-        stroke="#00ffff"
+        stroke="#ff0000"
         stroke-width="2"
         opacity="0.98"/>
 
@@ -50,25 +51,25 @@
 
   <path d="M30 80 V30 H80"
         fill="none"
-        stroke="#00ffff"
+        stroke="#ff0000"
         stroke-width="3"
         filter="url(#glow)"/>
 
   <path d="M920 30 H970 V80"
         fill="none"
-        stroke="#00ffff"
+        stroke="#ff0000"
         stroke-width="3"
         filter="url(#glow)"/>
 
   <path d="M30 340 V390 H80"
         fill="none"
-        stroke="#00ffff"
+        stroke="#ff0000"
         stroke-width="3"
         filter="url(#glow)"/>
 
   <path d="M920 390 H970 V340"
         fill="none"
-        stroke="#00ffff"
+        stroke="#ff0000"
         stroke-width="3"
         filter="url(#glow)"/>
 
@@ -78,7 +79,7 @@
   <text x="500"
         y="55"
         text-anchor="middle"
-        fill="#00ffff"
+        fill="#ff0000"
         font-family="monospace"
         font-size="18"
         letter-spacing="5"
@@ -101,7 +102,7 @@
           cy="190"
           r="105"
           fill="none"
-          stroke="#00ffff"
+          stroke="#ff0000"
           stroke-width="1"
           opacity="0.25"/>
 
@@ -109,7 +110,7 @@
           cy="190"
           r="80"
           fill="none"
-          stroke="#00ffff"
+          stroke="#ff0000"
           stroke-width="1"
           opacity="0.4"/>
 
@@ -117,7 +118,7 @@
           cy="190"
           r="55"
           fill="none"
-          stroke="#00ffff"
+          stroke="#ff0000"
           stroke-width="2"
           opacity="0.7"/>
 
@@ -129,7 +130,7 @@
           y1="0"
           x2="0"
           y2="-105"
-          stroke="#00ffff"
+          stroke="#ff0000"
           stroke-width="2"
           opacity="0.8"
           filter="url(#glow)">
@@ -176,7 +177,7 @@
   <text x="500"
         y="215"
         text-anchor="middle"
-        fill="#8bffff"
+        fill="#ff6666"
         font-family="monospace"
         font-size="15"
         letter-spacing="4">
@@ -209,7 +210,7 @@
 
   <text x="75"
         y="290"
-        fill="#00ffff"
+        fill="#ff0000"
         font-family="monospace"
         font-size="13">
 
@@ -219,7 +220,7 @@
 
   <text x="75"
         y="315"
-        fill="#00ffff"
+        fill="#ff0000"
         font-family="monospace"
         font-size="13">
 
@@ -231,7 +232,7 @@
   <text x="925"
         y="290"
         text-anchor="end"
-        fill="#00ffff"
+        fill="#ff0000"
         font-family="monospace"
         font-size="13">
 
@@ -242,7 +243,7 @@
   <text x="925"
         y="315"
         text-anchor="end"
-        fill="#00ffff"
+        fill="#ff0000"
         font-family="monospace"
         font-size="13">
 
@@ -258,8 +259,8 @@
         width="500"
         height="8"
         rx="4"
-        fill="#071b20"
-        stroke="#00ffff"
+        fill="#260707"
+        stroke="#ff0000"
         stroke-width="1"/>
 
   <rect x="250"
@@ -267,7 +268,7 @@
         width="0"
         height="8"
         rx="4"
-        fill="#00ffff"
+        fill="#ff0000"
         filter="url(#glow)">
 
     <animate
@@ -285,7 +286,7 @@
   <text x="500"
         y="380"
         text-anchor="middle"
-        fill="#00ffff"
+        fill="#ff0000"
         font-family="monospace"
         font-size="17"
         font-weight="bold"
@@ -304,3 +305,4 @@
   </text>
 
 </svg>
+```
