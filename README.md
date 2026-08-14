@@ -5,9 +5,9 @@
 <table align="center" width="900">
 <tr>
 
-<td width="45%" align="center" valign="top">
+<td width="50%" align="center" valign="top">
 
-<pre style="font-family: monospace; font-size: 9px; line-height: 1; white-space: pre; text-align: left;">
+<pre style="font-family: 'Courier New', monospace; font-size: 8px; line-height: 8px; white-space: pre; text-align: left; margin: 0;">
                        ..+      ...
                     ==.-..:-=.  ...:.:-==
                 .-    ...:.     ..  ..=:.-*=
@@ -38,9 +38,9 @@
 
 </td>
 
-<td width="55%" valign="top">
+<td width="50%" valign="top">
 
-<pre style="font-family: monospace; font-size: 12px; line-height: 1.35; white-space: pre;">
+<pre style="font-family: 'Courier New', monospace; font-size: 12px; line-height: 1.35; white-space: pre; margin: 0;">
 GAYATHRI
 ────────────────────────────────────────────
 
