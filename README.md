@@ -2,15 +2,13 @@
   <img src="./assets/cyberpunk-scan.svg" width="900">
 </p>
 
-<div align="center">
-
-<pre>
- <table>
+<table>
 <tr>
-<td width="5%" align="center">
+
+<td width="40%" align="center">
 
 <pre><small>
-                                                                                                                        
+                                                                                                                          
                                                                                                                         
                                                                                                                         
                                                                                                                         
@@ -77,7 +75,7 @@ ascii.gg
 
 </td>
 
-<td width="55%">
+<td width="60%">
 
 <pre>
 GAYATHRI
@@ -115,5 +113,6 @@ Status:          ACTIVE
 </pre>
 
 </td>
+
 </tr>
 </table>
