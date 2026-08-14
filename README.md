@@ -2,17 +2,12 @@
   <img src="./assets/cyberpunk-scan.svg" width="900">
 </p>
 
-<table width="100%" style="table-layout: fixed;">
-  <colgroup>
-    <col width="50%">
-    <col width="50%">
-  </colgroup>
+<table align="center" width="900">
+<tr>
 
-  <tr>
+<td width="45%" align="center" valign="top">
 
-    <td width="50%" valign="top" align="center">
-
-<pre style="margin: 0; overflow: hidden;"><small>
+<pre><small>
                        ..+      ...
                     ==.-..:-=.  ...:.:-==
                 .-    ...:.     ..  ..=:.-*=
@@ -41,11 +36,11 @@
                        .  ........:..... .-== :
 </small></pre>
 
-    </td>
+</td>
 
-    <td width="50%" valign="top">
+<td width="55%" valign="top">
 
-<pre style="margin: 0; overflow: hidden;">
+<pre>
 GAYATHRI
 ────────────────────────────────────────────
 
@@ -77,10 +72,10 @@ Projects:        Building
 Current:         AI + Computer Vision
 Status:          ACTIVE
 
-────────────────────────────────────────────
+─────────────────────────────────────────
 </pre>
 
-    </td>
+</td>
 
-  </tr>
+</tr>
 </table>
