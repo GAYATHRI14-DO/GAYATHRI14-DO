@@ -5,6 +5,11 @@
 <div align="center">
 
 <pre>
+ <table>
+<tr>
+<td width="45%" align="center">
+
+<pre><small>
                                                                                                                         
                                                                                                                         
                                                                                                                         
@@ -67,7 +72,48 @@
                                                                                                                         
                                                                                                                         
                                                                                                                         
+ascii.gg
+</small></pre>
 
+</td>
+
+<td width="55%">
+
+<pre>
+GAYATHRI
+────────────────────────────────────────────
+
+OS:              Windows / Linux
+STATUS:          ONLINE
+ROLE:            DEVELOPER
+FOCUS:           AI / COMPUTER VISION
+
+Languages:
+  Python
+  JavaScript
+  C++
+  HTML / CSS
+
+Interests:
+  Artificial Intelligence
+  Computer Vision
+  Web Development
+  Creative Projects
+
+──────────────── CONTACT ────────────────
+
+GitHub:          GAYATHRI14-DO
+LinkedIn:        Gayathri
+
+──────────────── GITHUB ─────────────────
+
+Projects:        Building
+Current:         AI + Computer Vision
+Status:          ACTIVE
+
+─────────────────────────────────────────
 </pre>
 
-</div>
+</td>
+</tr>
+</table>
