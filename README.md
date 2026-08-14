@@ -7,7 +7,7 @@
 
 <td width="45%" align="center" valign="top">
 
-<pre><small>
+<pre style="font-family: monospace; font-size: 9px; line-height: 1; white-space: pre; text-align: left;">
                        ..+      ...
                     ==.-..:-=.  ...:.:-==
                 .-    ...:.     ..  ..=:.-*=
@@ -34,13 +34,13 @@
             ...-=+=.    .......... ....  .. .-===::
                :=+=:      ..........   .... .-=::
                        .  ........:..... .-== :
-</small></pre>
+</pre>
 
 </td>
 
 <td width="55%" valign="top">
 
-<pre>
+<pre style="font-family: monospace; font-size: 12px; line-height: 1.35; white-space: pre;">
 GAYATHRI
 ────────────────────────────────────────────
 
