@@ -1,1 +1,306 @@
+<svg width="1000" height="420" viewBox="0 0 1000 420"
+     xmlns="http://www.w3.org/2000/svg">
 
+  <defs>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050510"/>
+      <stop offset="50%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#050510"/>
+    </linearGradient>
+
+    <!-- Scan line gradient -->
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00ffff"/>
+      <stop offset="100%" stop-color="#00ffff" stop-opacity="0"/>
+    </linearGradient>
+
+  </defs>
+
+
+  <!-- BACKGROUND -->
+  <rect width="1000" height="420"
+        rx="20"
+        fill="url(#bg)"
+        stroke="#00ffff"
+        stroke-width="2"
+        opacity="0.98"/>
+
+
+  <!-- DECORATIVE CORNERS -->
+
+  <path d="M30 80 V30 H80"
+        fill="none"
+        stroke="#00ffff"
+        stroke-width="3"
+        filter="url(#glow)"/>
+
+  <path d="M920 30 H970 V80"
+        fill="none"
+        stroke="#00ffff"
+        stroke-width="3"
+        filter="url(#glow)"/>
+
+  <path d="M30 340 V390 H80"
+        fill="none"
+        stroke="#00ffff"
+        stroke-width="3"
+        filter="url(#glow)"/>
+
+  <path d="M920 390 H970 V340"
+        fill="none"
+        stroke="#00ffff"
+        stroke-width="3"
+        filter="url(#glow)"/>
+
+
+  <!-- TOP STATUS -->
+
+  <text x="500"
+        y="55"
+        text-anchor="middle"
+        fill="#00ffff"
+        font-family="monospace"
+        font-size="18"
+        letter-spacing="5"
+        filter="url(#glow)">
+
+    IDENTITY SCAN // INITIALIZING
+
+    <animate
+      attributeName="opacity"
+      values="1;0.3;1"
+      dur="1.5s"
+      repeatCount="indefinite"/>
+
+  </text>
+
+
+  <!-- RADAR RINGS -->
+
+  <circle cx="500"
+          cy="190"
+          r="105"
+          fill="none"
+          stroke="#00ffff"
+          stroke-width="1"
+          opacity="0.25"/>
+
+  <circle cx="500"
+          cy="190"
+          r="80"
+          fill="none"
+          stroke="#00ffff"
+          stroke-width="1"
+          opacity="0.4"/>
+
+  <circle cx="500"
+          cy="190"
+          r="55"
+          fill="none"
+          stroke="#00ffff"
+          stroke-width="2"
+          opacity="0.7"/>
+
+
+  <!-- ROTATING RADAR -->
+
+  <g transform="translate(500 190)">
+    <line x1="0"
+          y1="0"
+          x2="0"
+          y2="-105"
+          stroke="#00ffff"
+          stroke-width="2"
+          opacity="0.8"
+          filter="url(#glow)">
+
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0"
+        to="360"
+        dur="3s"
+        repeatCount="indefinite"/>
+
+    </line>
+  </g>
+
+
+  <!-- SUBJECT -->
+
+  <text x="500"
+        y="175"
+        text-anchor="middle"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="42"
+        font-weight="bold"
+        letter-spacing="8"
+        filter="url(#strongGlow)">
+
+    GAYATHRI
+
+    <!-- Glitch flicker -->
+    <animate
+      attributeName="opacity"
+      values="0;0;1;1;1;0.4;1"
+      keyTimes="0;0.2;0.35;0.6;0.7;0.75;1"
+      dur="4s"
+      repeatCount="indefinite"/>
+
+  </text>
+
+
+  <!-- ROLE -->
+
+  <text x="500"
+        y="215"
+        text-anchor="middle"
+        fill="#8bffff"
+        font-family="monospace"
+        font-size="15"
+        letter-spacing="4">
+
+    DEVELOPER // AI // COMPUTER VISION
+
+  </text>
+
+
+  <!-- SCAN LINE -->
+
+  <rect x="150"
+        y="90"
+        width="700"
+        height="3"
+        rx="2"
+        fill="url(#scan)"
+        filter="url(#glow)">
+
+    <animate
+      attributeName="y"
+      values="90;290;90"
+      dur="2.5s"
+      repeatCount="indefinite"/>
+
+  </rect>
+
+
+  <!-- DATA PANELS -->
+
+  <text x="75"
+        y="290"
+        fill="#00ffff"
+        font-family="monospace"
+        font-size="13">
+
+    SUBJECT : GAYATHRI
+
+  </text>
+
+  <text x="75"
+        y="315"
+        fill="#00ffff"
+        font-family="monospace"
+        font-size="13">
+
+    STATUS  : ONLINE
+
+  </text>
+
+
+  <text x="925"
+        y="290"
+        text-anchor="end"
+        fill="#00ffff"
+        font-family="monospace"
+        font-size="13">
+
+    CLASS : DEVELOPER
+
+  </text>
+
+  <text x="925"
+        y="315"
+        text-anchor="end"
+        fill="#00ffff"
+        font-family="monospace"
+        font-size="13">
+
+    ACCESS : PUBLIC
+
+  </text>
+
+
+  <!-- PROGRESS BAR -->
+
+  <rect x="250"
+        y="340"
+        width="500"
+        height="8"
+        rx="4"
+        fill="#071b20"
+        stroke="#00ffff"
+        stroke-width="1"/>
+
+  <rect x="250"
+        y="340"
+        width="0"
+        height="8"
+        rx="4"
+        fill="#00ffff"
+        filter="url(#glow)">
+
+    <animate
+      attributeName="width"
+      values="0;500;500;0"
+      keyTimes="0;0.45;0.7;1"
+      dur="4s"
+      repeatCount="indefinite"/>
+
+  </rect>
+
+
+  <!-- ACCESS GRANTED -->
+
+  <text x="500"
+        y="380"
+        text-anchor="middle"
+        fill="#00ffff"
+        font-family="monospace"
+        font-size="17"
+        font-weight="bold"
+        letter-spacing="5"
+        filter="url(#glow)">
+
+    ACCESS GRANTED ✓
+
+    <animate
+      attributeName="opacity"
+      values="0;0;1;1;0"
+      keyTimes="0;0.55;0.65;0.9;1"
+      dur="4s"
+      repeatCount="indefinite"/>
+
+  </text>
+
+</svg>
