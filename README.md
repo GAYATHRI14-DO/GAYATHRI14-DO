@@ -2,12 +2,17 @@
   <img src="./assets/cyberpunk-scan.svg" width="900">
 </p>
 
-<table width="100%">
-<tr>
+<table width="100%" style="table-layout: fixed;">
+  <colgroup>
+    <col width="50%">
+    <col width="50%">
+  </colgroup>
 
-<td width="50%" align="center" valign="top">
+  <tr>
 
-<pre><small>
+    <td width="50%" valign="top" align="center">
+
+<pre style="margin: 0; overflow: hidden;"><small>
                        ..+      ...
                     ==.-..:-=.  ...:.:-==
                 .-    ...:.     ..  ..=:.-*=
@@ -34,15 +39,13 @@
             ...-=+=.    .......... ....  .. .-===::
                :=+=:      ..........   .... .-=::
                        .  ........:..... .-== :
-
-
 </small></pre>
 
-</td>
+    </td>
 
-<td width="50%" valign="top">
+    <td width="50%" valign="top">
 
-<pre>
+<pre style="margin: 0; overflow: hidden;">
 GAYATHRI
 ────────────────────────────────────────────
 
@@ -77,7 +80,7 @@ Status:          ACTIVE
 ────────────────────────────────────────────
 </pre>
 
-</td>
+    </td>
 
-</tr>
+  </tr>
 </table>
