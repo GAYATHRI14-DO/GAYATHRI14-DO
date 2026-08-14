@@ -7,7 +7,7 @@
 <pre>
  <table>
 <tr>
-<td width="25%" align="center">
+<td width="5%" align="center">
 
 <pre><small>
                                                                                                                         
