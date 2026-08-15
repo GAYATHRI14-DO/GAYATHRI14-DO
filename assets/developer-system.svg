@@ -1,5 +1,5 @@
-<svg width="1000" height="1500"
-     viewBox="0 0 1000 1500"
+<svg width="1000" height="1950"
+     viewBox="0 0 1000 1950"
      xmlns="http://www.w3.org/2000/svg">
 
   <defs>
@@ -1223,5 +1223,228 @@
 
   </text>
 
+  <!-- ================================================= -->
+  <!-- SECTION 05 : PROJECTS -->
+  <!-- ================================================= -->
+
+  <line x1="55"
+        y1="1490"
+        x2="945"
+        y2="1490"
+        stroke="#7b00c7"/>
+
+
+  <text x="55"
+        y="1540"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="20"
+        font-weight="bold"
+        letter-spacing="4"
+        filter="url(#glow)">
+
+    // PROJECTS
+
+  </text>
+
+
+  <text x="945"
+        y="1540"
+        text-anchor="end"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="11"
+        letter-spacing="2">
+
+    ACTIVE_BUILDS
+
+  </text>
+
+
+  <line x1="55"
+        y1="1560"
+        x2="945"
+        y2="1560"
+        stroke="#7b00c7"/>
+
+
+  <!-- PROJECT 01 -->
+
+  <text x="65"
+        y="1605"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    [01] ADAPTIVE AI SMART GLASSES
+
+  </text>
+
+
+  <text x="65"
+        y="1630"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="11">
+
+    AI-powered assistance system for visually impaired users
+
+  </text>
+
+
+  <text x="65"
+        y="1652"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="11">
+
+    Face Recognition • Object Detection • OCR • Voice Guidance
+
+  </text>
+
+
+  <text x="925"
+        y="1605"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="11">
+
+    [ MAJOR PROJECT ]
+
+  </text>
+
+
+  <!-- PROJECT 02 -->
+
+  <text x="65"
+        y="1705"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    [02] SAFESPHERE
+
+  </text>
+
+
+  <text x="65"
+        y="1730"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="11">
+
+    Real-time CCTV violence detection and alert system
+
+  </text>
+
+
+  <text x="65"
+        y="1752"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="11">
+
+    YOLO • Computer Vision • Flask • Audio Detection
+
+  </text>
+
+
+  <text x="925"
+        y="1705"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="11">
+
+    [ BUILDING ]
+
+  </text>
+
+
+  <!-- PROJECT 03 -->
+
+  <text x="65"
+        y="1805"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    [03] COSMIC TASK MASTER
+
+  </text>
+
+
+  <text x="65"
+        y="1830"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="11">
+
+    Gamified productivity platform built around quests and XP
+
+  </text>
+
+
+  <text x="65"
+        y="1852"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="11">
+
+    React • TypeScript • Vite • Tailwind CSS • Vercel
+
+  </text>
+
+
+  <text x="925"
+        y="1805"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="11">
+
+    [ DEPLOYED ]
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- SYSTEM LOG -->
+  <!-- ================================================= -->
+
+  <line x1="55"
+        y1="1880"
+        x2="945"
+        y2="1880"
+        stroke="#5f00a8"/>
+
+
+  <text x="55"
+        y="1915"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="10"
+        letter-spacing="2">
+
+    SYSTEM LOG // PROFILE_SCAN_COMPLETE
+
+  </text>
+
+
+  <text x="945"
+        y="1915"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="10">
+
+    [ 05 MODULES ONLINE ]
+
+  </text>
 
 </svg>
+
