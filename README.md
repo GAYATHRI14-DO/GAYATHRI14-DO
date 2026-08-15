@@ -1,10 +1,6 @@
 <p align="center">
   <img src="./assets/cyberpunk-scan.svg" width="900">
 </p>
-
 <p align="center">
-  <img src="./assets/developer-profile.svg" width="900">
-</p>
-<p align="center">
-  <img src="./assets/skill-matrix.svg" width="900">
+  <img src="./assets/developer-system.svg" width="900">
 </p>
