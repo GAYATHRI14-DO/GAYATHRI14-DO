@@ -237,7 +237,7 @@
   </text>
 
 
-  <!-- ================================================= -->
+   <!-- ================================================= -->
   <!-- SKILL MATRIX -->
   <!-- ================================================= -->
 
@@ -246,7 +246,6 @@
         x2="945"
         y2="350"
         stroke="#5f00a8"/>
-
 
   <text x="55"
         y="400"
@@ -259,7 +258,6 @@
     // SKILL MATRIX
   </text>
 
-
   <text x="945"
         y="400"
         text-anchor="end"
@@ -270,7 +268,6 @@
     CAPABILITY_SCAN
   </text>
 
-
   <line x1="55"
         y1="420"
         x2="945"
@@ -278,7 +275,9 @@
         stroke="#7b00c7"/>
 
 
-  <!-- AI / ML -->
+  <!-- ================================================= -->
+  <!-- AI / MACHINE LEARNING — 75% -->
+  <!-- ================================================= -->
 
   <text x="65"
         y="460"
@@ -302,10 +301,12 @@
         text-anchor="end"
         fill="#d000ff"
         font-family="monospace"
-        font-size="12">
-    82%
+        font-size="12"
+        font-weight="bold">
+    75%
   </text>
 
+  <!-- Background -->
   <rect x="65"
         y="500"
         width="390"
@@ -313,6 +314,7 @@
         rx="4"
         fill="#22002f"/>
 
+  <!-- 75% = 292.5px -->
   <rect x="65"
         y="500"
         width="0"
@@ -320,16 +322,16 @@
         rx="4"
         fill="#d000ff"
         filter="url(#glow)">
-
     <animate attributeName="width"
-             values="0;320;320"
+             values="0;292.5;292.5"
              dur="3s"
              repeatCount="indefinite"/>
-
   </rect>
 
 
-  <!-- COMPUTER VISION -->
+  <!-- ================================================= -->
+  <!-- COMPUTER VISION — 60% -->
+  <!-- ================================================= -->
 
   <text x="545"
         y="460"
@@ -353,10 +355,12 @@
         text-anchor="end"
         fill="#d000ff"
         font-family="monospace"
-        font-size="12">
-    70%
+        font-size="12"
+        font-weight="bold">
+    60%
   </text>
 
+  <!-- Background -->
   <rect x="545"
         y="500"
         width="390"
@@ -364,6 +368,7 @@
         rx="4"
         fill="#22002f"/>
 
+  <!-- 60% = 234px -->
   <rect x="545"
         y="500"
         width="0"
@@ -371,16 +376,16 @@
         rx="4"
         fill="#d000ff"
         filter="url(#glow)">
-
     <animate attributeName="width"
-             values="0;350;350"
+             values="0;234;234"
              dur="3s"
              repeatCount="indefinite"/>
-
   </rect>
 
 
-  <!-- PROGRAMMING -->
+  <!-- ================================================= -->
+  <!-- PROGRAMMING — 60% -->
+  <!-- ================================================= -->
 
   <text x="65"
         y="560"
@@ -404,10 +409,12 @@
         text-anchor="end"
         fill="#d000ff"
         font-family="monospace"
-        font-size="12">
+        font-size="12"
+        font-weight="bold">
     60%
   </text>
 
+  <!-- Background -->
   <rect x="65"
         y="600"
         width="390"
@@ -415,6 +422,7 @@
         rx="4"
         fill="#22002f"/>
 
+  <!-- 60% = 234px -->
   <rect x="65"
         y="600"
         width="0"
@@ -422,16 +430,16 @@
         rx="4"
         fill="#d000ff"
         filter="url(#glow)">
-
     <animate attributeName="width"
-             values="0;300;300"
+             values="0;234;234"
              dur="3s"
              repeatCount="indefinite"/>
-
   </rect>
 
 
-  <!-- WEB -->
+  <!-- ================================================= -->
+  <!-- WEB DEVELOPMENT — 85% -->
+  <!-- ================================================= -->
 
   <text x="545"
         y="560"
@@ -455,10 +463,12 @@
         text-anchor="end"
         fill="#d000ff"
         font-family="monospace"
-        font-size="12">
-    82%
+        font-size="12"
+        font-weight="bold">
+    85%
   </text>
 
+  <!-- Background -->
   <rect x="545"
         y="600"
         width="390"
@@ -466,6 +476,7 @@
         rx="4"
         fill="#22002f"/>
 
+  <!-- 85% = 331.5px -->
   <rect x="545"
         y="600"
         width="0"
@@ -473,16 +484,16 @@
         rx="4"
         fill="#d000ff"
         filter="url(#glow)">
-
     <animate attributeName="width"
-             values="0;280;280"
+             values="0;331.5;331.5"
              dur="3s"
              repeatCount="indefinite"/>
-
   </rect>
 
 
-  <!-- TOOLS -->
+  <!-- ================================================= -->
+  <!-- TOOLS & PLATFORMS — 83% -->
+  <!-- ================================================= -->
 
   <text x="65"
         y="660"
@@ -506,10 +517,12 @@
         text-anchor="end"
         fill="#d000ff"
         font-family="monospace"
-        font-size="12">
-    85%
+        font-size="12"
+        font-weight="bold">
+    83%
   </text>
 
+  <!-- Background -->
   <rect x="65"
         y="700"
         width="390"
@@ -517,6 +530,7 @@
         rx="4"
         fill="#22002f"/>
 
+  <!-- 83% = 323.7px -->
   <rect x="65"
         y="700"
         width="0"
@@ -524,16 +538,16 @@
         rx="4"
         fill="#d000ff"
         filter="url(#glow)">
-
     <animate attributeName="width"
-             values="0;330;330"
+             values="0;323.7;323.7"
              dur="3s"
              repeatCount="indefinite"/>
-
   </rect>
 
 
-  <!-- HARDWARE -->
+  <!-- ================================================= -->
+  <!-- HARDWARE / SYSTEMS — 50% -->
+  <!-- ================================================= -->
 
   <text x="545"
         y="660"
@@ -557,10 +571,12 @@
         text-anchor="end"
         fill="#d000ff"
         font-family="monospace"
-        font-size="12">
-    67%
+        font-size="12"
+        font-weight="bold">
+    50%
   </text>
 
+  <!-- Background -->
   <rect x="545"
         y="700"
         width="390"
@@ -568,6 +584,7 @@
         rx="4"
         fill="#22002f"/>
 
+  <!-- 50% = 195px -->
   <rect x="545"
         y="700"
         width="0"
@@ -575,12 +592,10 @@
         rx="4"
         fill="#d000ff"
         filter="url(#glow)">
-
     <animate attributeName="width"
-             values="0;260;260"
+             values="0;195;195"
              dur="3s"
              repeatCount="indefinite"/>
-
   </rect>
 
 
