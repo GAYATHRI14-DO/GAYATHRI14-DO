@@ -878,7 +878,6 @@
 
 </text>
 
-
 <text x="945"
       y="1100"
       text-anchor="end"
@@ -891,7 +890,6 @@
 
 </text>
 
-
 <line x1="55"
       y1="1120"
       x2="945"
@@ -900,11 +898,50 @@
 
 
 <!-- ================================================= -->
+<!-- NETWORK HEADER -->
+<!-- ================================================= -->
+
+<text x="65"
+      y="1160"
+      fill="#8f38b8"
+      font-family="monospace"
+      font-size="11"
+      letter-spacing="2">
+
+  CHANNEL
+
+</text>
+
+<text x="250"
+      y="1160"
+      fill="#8f38b8"
+      font-family="monospace"
+      font-size="11"
+      letter-spacing="2">
+
+  ADDRESS
+
+</text>
+
+<text x="925"
+      y="1160"
+      text-anchor="end"
+      fill="#8f38b8"
+      font-family="monospace"
+      font-size="11"
+      letter-spacing="2">
+
+  STATUS
+
+</text>
+
+
+<!-- ================================================= -->
 <!-- GITHUB -->
 <!-- ================================================= -->
 
 <text x="65"
-      y="1165"
+      y="1205"
       fill="#ff4dff"
       font-family="monospace"
       font-size="15"
@@ -914,33 +951,25 @@
 
 </text>
 
+<text x="250"
+      y="1205"
+      fill="#f2d9ff"
+      font-family="monospace"
+      font-size="13">
 
-<!-- CLICKABLE GITHUB -->
+  github.com/GAYATHRI14-DO
 
-<a href="https://github.com/GAYATHRI14-DO"
-   target="_blank">
-
-  <text x="250"
-        y="1165"
-        fill="#f2d9ff"
-        font-family="monospace"
-        font-size="13">
-
-    github.com/GAYATHRI14-DO
-
-  </text>
-
-</a>
-
+</text>
 
 <text x="925"
-      y="1165"
+      y="1205"
       text-anchor="end"
       fill="#d000ff"
       font-family="monospace"
-      font-size="12">
+      font-size="12"
+      font-weight="bold">
 
-  [ CONNECTED ]
+  [ OPEN ↗ ]
 
 </text>
 
@@ -950,7 +979,7 @@
 <!-- ================================================= -->
 
 <text x="65"
-      y="1225"
+      y="1265"
       fill="#ff4dff"
       font-family="monospace"
       font-size="15"
@@ -960,33 +989,25 @@
 
 </text>
 
+<text x="250"
+      y="1265"
+      fill="#f2d9ff"
+      font-family="monospace"
+      font-size="13">
 
-<!-- CLICKABLE LINKEDIN -->
+  linkedin.com/in/gayathri-93ab2a310/
 
-<a href="https://www.linkedin.com/in/gayathri-93ab2a310/"
-   target="_blank">
-
-  <text x="250"
-        y="1225"
-        fill="#f2d9ff"
-        font-family="monospace"
-        font-size="13">
-
-    linkedin.com/in/gayathri-93ab2a310/
-
-  </text>
-
-</a>
-
+</text>
 
 <text x="925"
-      y="1225"
+      y="1265"
       text-anchor="end"
       fill="#d000ff"
       font-family="monospace"
-      font-size="12">
+      font-size="12"
+      font-weight="bold">
 
-  [ CONNECTED ]
+  [ OPEN ↗ ]
 
 </text>
 
@@ -996,7 +1017,7 @@
 <!-- ================================================= -->
 
 <text x="65"
-      y="1285"
+      y="1325"
       fill="#ff4dff"
       font-family="monospace"
       font-size="15"
@@ -1006,9 +1027,8 @@
 
 </text>
 
-
 <text x="250"
-      y="1285"
+      y="1325"
       fill="#f2d9ff"
       font-family="monospace"
       font-size="13">
@@ -1017,13 +1037,13 @@
 
 </text>
 
-
 <text x="925"
-      y="1285"
+      y="1325"
       text-anchor="end"
       fill="#d000ff"
       font-family="monospace"
-      font-size="12">
+      font-size="12"
+      font-weight="bold">
 
   [ AVAILABLE ]
 
@@ -1035,7 +1055,7 @@
 <!-- ================================================= -->
 
 <text x="65"
-      y="1345"
+      y="1385"
       fill="#ff4dff"
       font-family="monospace"
       font-size="15"
@@ -1045,83 +1065,57 @@
 
 </text>
 
+<text x="250"
+      y="1385"
+      fill="#f2d9ff"
+      font-family="monospace"
+      font-size="13">
 
-<!-- CLICKABLE EMAIL -->
+  gayathriyit6@gmail.com
 
-<a href="mailto:gayathriyit6@gmail.com">
-
-  <text x="250"
-        y="1345"
-        fill="#f2d9ff"
-        font-family="monospace"
-        font-size="13">
-
-    gayathriyit6@gmail.com
-
-  </text>
-
-</a>
-
+</text>
 
 <text x="925"
-      y="1345"
+      y="1385"
       text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="12">
-
-  [ ONLINE ]
-
-</text>
-
-
-<!-- ================================================= -->
-<!-- FINAL SYSTEM LOG -->
-<!-- ================================================= -->
-
-<line x1="55"
-      y1="1380"
-      x2="945"
-      y2="1380"
-      stroke="#5f00a8"/>
-
-
-<text x="55"
-      y="1420"
-      fill="#8f38b8"
-      font-family="monospace"
-      font-size="11"
-      letter-spacing="2">
-
-  SYSTEM LOG // PROFILE + SKILLS + EDUCATION + NETWORK
-
-</text>
-
-
-<text x="945"
-      y="1420"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="11">
-
-  [ ONLINE ]
-
-</text>
-
-
-<text x="500"
-      y="1460"
-      text-anchor="middle"
       fill="#d000ff"
       font-family="monospace"
       font-size="12"
-      letter-spacing="4"
-      filter="url(#glow)">
+      font-weight="bold">
 
-  [ GAYATHRI // SYSTEM ONLINE ]
+  [ CONTACT ]
 
 </text>
 
 
-</svg>
+<!-- ================================================= -->
+<!-- NETWORK FOOTER -->
+<!-- ================================================= -->
+
+<line x1="55"
+      y1="1420"
+      x2="945"
+      y2="1420"
+      stroke="#5f00a8"/>
+
+<text x="55"
+      y="1450"
+      fill="#8f38b8"
+      font-family="monospace"
+      font-size="10"
+      letter-spacing="2">
+
+  NETWORK_STATUS // 4 CHANNELS DETECTED
+
+</text>
+
+<text x="945"
+      y="1450"
+      text-anchor="end"
+      fill="#d000ff"
+      font-family="monospace"
+      font-size="10">
+
+  [ ONLINE ]
+
+</text>
