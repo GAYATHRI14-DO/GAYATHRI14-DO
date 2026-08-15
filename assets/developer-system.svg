@@ -1,0 +1,433 @@
+<svg width="1000" height="920" viewBox="0 0 1000 920"
+xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#08000f"/>
+    <stop offset="50%" stop-color="#14001f"/>
+    <stop offset="100%" stop-color="#05000c"/>
+  </linearGradient>
+
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <filter id="strongGlow">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+</defs>
+
+
+<!-- ================================================= -->
+<!-- MAIN CONTINUOUS PANEL -->
+<!-- ================================================= -->
+
+<rect x="12" y="12"
+      width="976" height="896"
+      rx="16"
+      fill="url(#bg)"
+      stroke="#a900ff"
+      stroke-width="2"
+      filter="url(#glow)"/>
+
+<rect x="25" y="25"
+      width="950" height="870"
+      rx="10"
+      fill="none"
+      stroke="#5f00a8"
+      opacity="0.7"/>
+
+
+<!-- ================================================= -->
+<!-- CYBERPUNK CORNERS -->
+<!-- ================================================= -->
+
+<path d="M45 100 V45 H110"
+      fill="none"
+      stroke="#d000ff"
+      stroke-width="4"
+      filter="url(#strongGlow)"/>
+
+<path d="M890 45 H955 V100"
+      fill="none"
+      stroke="#d000ff"
+      stroke-width="4"
+      filter="url(#strongGlow)"/>
+
+<path d="M45 820 V875 H110"
+      fill="none"
+      stroke="#d000ff"
+      stroke-width="4"
+      filter="url(#strongGlow)"/>
+
+<path d="M890 875 H955 V820"
+      fill="none"
+      stroke="#d000ff"
+      stroke-width="4"
+      filter="url(#strongGlow)"/>
+
+
+<!-- ================================================= -->
+<!-- DEVELOPER PROFILE -->
+<!-- ================================================= -->
+
+<text x="55" y="70"
+      fill="#d000ff"
+      font-family="monospace"
+      font-size="20"
+      font-weight="bold"
+      letter-spacing="4"
+      filter="url(#glow)">
+  // DEVELOPER PROFILE
+</text>
+
+<text x="945" y="70"
+      text-anchor="end"
+      fill="#d000ff"
+      font-family="monospace"
+      font-size="11"
+      letter-spacing="2">
+  PROFILE_LOADED
+</text>
+
+<line x1="55" y1="92"
+      x2="945" y2="92"
+      stroke="#7b00c7"/>
+
+
+<!-- PROFILE DATA -->
+
+<g font-family="monospace" font-size="17">
+
+  <text x="65" y="140" fill="#ff4dff">NAME</text>
+  <text x="200" y="140" fill="#7b00c7">:</text>
+  <text x="225" y="140" fill="#f2d9ff">GAYATHRI</text>
+
+  <text x="65" y="185" fill="#ff4dff">ROLE</text>
+  <text x="200" y="185" fill="#7b00c7">:</text>
+  <text x="225" y="185" fill="#f2d9ff">
+    INFORMATION SCIENCE ENGINEER
+  </text>
+
+  <text x="65" y="230" fill="#ff4dff">DOMAIN</text>
+  <text x="200" y="230" fill="#7b00c7">:</text>
+  <text x="225" y="230" fill="#f2d9ff">
+    AI / ML / COMPUTER VISION
+  </text>
+
+  <text x="65" y="275" fill="#ff4dff">STATUS</text>
+  <text x="200" y="275" fill="#7b00c7">:</text>
+
+  <circle cx="230" cy="270" r="5"
+          fill="#d000ff"
+          filter="url(#glow)">
+    <animate attributeName="opacity"
+             values="1;0.2;1"
+             dur="1.2s"
+             repeatCount="indefinite"/>
+  </circle>
+
+  <text x="245" y="275"
+        fill="#d000ff">
+    BUILDING
+  </text>
+
+  <text x="65" y="340" fill="#ff4dff">MISSION</text>
+  <text x="200" y="340" fill="#7b00c7">:</text>
+
+  <text x="225" y="340"
+        fill="#f2d9ff">
+    LEARN → BUILD → EXPERIMENT → REPEAT
+  </text>
+
+</g>
+
+
+<!-- ================================================= -->
+<!-- DIVIDER -->
+<!-- ================================================= -->
+
+<line x1="55" y1="390"
+      x2="945" y2="390"
+      stroke="#a900ff"
+      stroke-width="1"
+      filter="url(#glow)"/>
+
+<text x="500" y="382"
+      text-anchor="middle"
+      fill="#7b00c7"
+      font-family="monospace"
+      font-size="10"
+      letter-spacing="3">
+  SYSTEM_CAPABILITIES
+</text>
+
+
+<!-- ================================================= -->
+<!-- SKILL MATRIX -->
+<!-- ================================================= -->
+
+<text x="55" y="440"
+      fill="#d000ff"
+      font-family="monospace"
+      font-size="20"
+      font-weight="bold"
+      letter-spacing="4"
+      filter="url(#glow)">
+  // SKILL MATRIX
+</text>
+
+<text x="945" y="440"
+      text-anchor="end"
+      fill="#8f38b8"
+      font-family="monospace"
+      font-size="11"
+      letter-spacing="2">
+  CAPABILITY_SCAN
+</text>
+
+
+<line x1="55" y1="460"
+      x2="945" y2="460"
+      stroke="#7b00c7"/>
+
+
+<!-- AI -->
+
+<text x="65" y="500"
+      fill="#ff4dff"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold">
+  AI / MACHINE LEARNING
+</text>
+
+<text x="65" y="525"
+      fill="#f2d9ff"
+      font-family="monospace"
+      font-size="12">
+  Python • Deep Learning • YOLO • OCR
+</text>
+
+<rect x="65" y="540"
+      width="390" height="8"
+      rx="4"
+      fill="#22002f"/>
+
+<rect x="65" y="540"
+      width="0" height="8"
+      rx="4"
+      fill="#d000ff"
+      filter="url(#glow)">
+  <animate attributeName="width"
+           values="0;320;320"
+           dur="3s"
+           repeatCount="indefinite"/>
+</rect>
+
+
+<!-- COMPUTER VISION -->
+
+<text x="545" y="500"
+      fill="#ff4dff"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold">
+  COMPUTER VISION
+</text>
+
+<text x="545" y="525"
+      fill="#f2d9ff"
+      font-family="monospace"
+      font-size="12">
+  Face Recognition • Detection • Image AI
+</text>
+
+<rect x="545" y="540"
+      width="390" height="8"
+      rx="4"
+      fill="#22002f"/>
+
+<rect x="545" y="540"
+      width="0" height="8"
+      rx="4"
+      fill="#d000ff"
+      filter="url(#glow)">
+  <animate attributeName="width"
+           values="0;350;350"
+           dur="3s"
+           repeatCount="indefinite"/>
+</rect>
+
+
+<!-- PROGRAMMING -->
+
+<text x="65" y="600"
+      fill="#ff4dff"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold">
+  PROGRAMMING
+</text>
+
+<text x="65" y="625"
+      fill="#f2d9ff"
+      font-family="monospace"
+      font-size="12">
+  Python • Java • JavaScript • C++
+</text>
+
+<rect x="65" y="640"
+      width="390" height="8"
+      rx="4"
+      fill="#22002f"/>
+
+<rect x="65" y="640"
+      width="0" height="8"
+      rx="4"
+      fill="#d000ff"
+      filter="url(#glow)">
+  <animate attributeName="width"
+           values="0;300;300"
+           dur="3s"
+           repeatCount="indefinite"/>
+</rect>
+
+
+<!-- WEB -->
+
+<text x="545" y="600"
+      fill="#ff4dff"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold">
+  WEB DEVELOPMENT
+</text>
+
+<text x="545" y="625"
+      fill="#f2d9ff"
+      font-family="monospace"
+      font-size="12">
+  React • Flask • HTML • CSS • Vite
+</text>
+
+<rect x="545" y="640"
+      width="390" height="8"
+      rx="4"
+      fill="#22002f"/>
+
+<rect x="545" y="640"
+      width="0" height="8"
+      rx="4"
+      fill="#d000ff"
+      filter="url(#glow)">
+  <animate attributeName="width"
+           values="0;280;280"
+           dur="3s"
+           repeatCount="indefinite"/>
+</rect>
+
+
+<!-- TOOLS -->
+
+<text x="65" y="700"
+      fill="#ff4dff"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold">
+  TOOLS &amp; PLATFORMS
+</text>
+
+<text x="65" y="725"
+      fill="#f2d9ff"
+      font-family="monospace"
+      font-size="12">
+  Git • GitHub • Firebase • Vercel • VS Code
+</text>
+
+<rect x="65" y="740"
+      width="390" height="8"
+      rx="4"
+      fill="#22002f"/>
+
+<rect x="65" y="740"
+      width="0" height="8"
+      rx="4"
+      fill="#d000ff"
+      filter="url(#glow)">
+  <animate attributeName="width"
+           values="0;330;330"
+           dur="3s"
+           repeatCount="indefinite"/>
+</rect>
+
+
+<!-- HARDWARE -->
+
+<text x="545" y="700"
+      fill="#ff4dff"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold">
+  HARDWARE / SYSTEMS
+</text>
+
+<text x="545" y="725"
+      fill="#f2d9ff"
+      font-family="monospace"
+      font-size="12">
+  Raspberry Pi • Linux • IoT
+</text>
+
+<rect x="545" y="740"
+      width="390" height="8"
+      rx="4"
+      fill="#22002f"/>
+
+<rect x="545" y="740"
+      width="0" height="8"
+      rx="4"
+      fill="#d000ff"
+      filter="url(#glow)">
+  <animate attributeName="width"
+           values="0;260;260"
+           dur="3s"
+           repeatCount="indefinite"/>
+</rect>
+
+
+<!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
+
+<line x1="55" y1="790"
+      x2="945" y2="790"
+      stroke="#5f00a8"/>
+
+<text x="55" y="820"
+      fill="#8f38b8"
+      font-family="monospace"
+      font-size="11"
+      letter-spacing="2">
+  SYSTEM LOG // PROFILE + CAPABILITIES ACTIVE
+</text>
+
+<text x="945" y="820"
+      text-anchor="end"
+      fill="#d000ff"
+      font-family="monospace"
+      font-size="11">
+  [ ONLINE ]
+</text>
+
+</svg>
