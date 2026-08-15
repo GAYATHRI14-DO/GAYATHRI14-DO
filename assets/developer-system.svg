@@ -196,13 +196,14 @@ xmlns="http://www.w3.org/2000/svg">
   CAPABILITY_SCAN
 </text>
 
-
 <line x1="55" y1="460"
       x2="945" y2="460"
       stroke="#7b00c7"/>
 
 
-<!-- AI -->
+<!-- ================================================= -->
+<!-- AI / MACHINE LEARNING -->
+<!-- ================================================= -->
 
 <text x="65" y="500"
       fill="#ff4dff"
@@ -210,6 +211,16 @@ xmlns="http://www.w3.org/2000/svg">
       font-size="15"
       font-weight="bold">
   AI / MACHINE LEARNING
+</text>
+
+<text x="455" y="500"
+      text-anchor="end"
+      fill="#d000ff"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      filter="url(#glow)">
+  75%
 </text>
 
 <text x="65" y="525"
@@ -230,13 +241,15 @@ xmlns="http://www.w3.org/2000/svg">
       fill="#d000ff"
       filter="url(#glow)">
   <animate attributeName="width"
-           values="0;320;320"
+           values="0;292.5;292.5"
            dur="3s"
            repeatCount="indefinite"/>
 </rect>
 
 
+<!-- ================================================= -->
 <!-- COMPUTER VISION -->
+<!-- ================================================= -->
 
 <text x="545" y="500"
       fill="#ff4dff"
@@ -244,6 +257,16 @@ xmlns="http://www.w3.org/2000/svg">
       font-size="15"
       font-weight="bold">
   COMPUTER VISION
+</text>
+
+<text x="935" y="500"
+      text-anchor="end"
+      fill="#d000ff"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      filter="url(#glow)">
+  80%
 </text>
 
 <text x="545" y="525"
@@ -264,13 +287,15 @@ xmlns="http://www.w3.org/2000/svg">
       fill="#d000ff"
       filter="url(#glow)">
   <animate attributeName="width"
-           values="0;350;350"
+           values="0;312;312"
            dur="3s"
            repeatCount="indefinite"/>
 </rect>
 
 
+<!-- ================================================= -->
 <!-- PROGRAMMING -->
+<!-- ================================================= -->
 
 <text x="65" y="600"
       fill="#ff4dff"
@@ -278,6 +303,16 @@ xmlns="http://www.w3.org/2000/svg">
       font-size="15"
       font-weight="bold">
   PROGRAMMING
+</text>
+
+<text x="455" y="600"
+      text-anchor="end"
+      fill="#d000ff"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      filter="url(#glow)">
+  70%
 </text>
 
 <text x="65" y="625"
@@ -298,13 +333,15 @@ xmlns="http://www.w3.org/2000/svg">
       fill="#d000ff"
       filter="url(#glow)">
   <animate attributeName="width"
-           values="0;300;300"
+           values="0;273;273"
            dur="3s"
            repeatCount="indefinite"/>
 </rect>
 
 
-<!-- WEB -->
+<!-- ================================================= -->
+<!-- WEB DEVELOPMENT -->
+<!-- ================================================= -->
 
 <text x="545" y="600"
       fill="#ff4dff"
@@ -312,6 +349,16 @@ xmlns="http://www.w3.org/2000/svg">
       font-size="15"
       font-weight="bold">
   WEB DEVELOPMENT
+</text>
+
+<text x="935" y="600"
+      text-anchor="end"
+      fill="#d000ff"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      filter="url(#glow)">
+  70%
 </text>
 
 <text x="545" y="625"
@@ -332,13 +379,15 @@ xmlns="http://www.w3.org/2000/svg">
       fill="#d000ff"
       filter="url(#glow)">
   <animate attributeName="width"
-           values="0;280;280"
+           values="0;273;273"
            dur="3s"
            repeatCount="indefinite"/>
 </rect>
 
 
-<!-- TOOLS -->
+<!-- ================================================= -->
+<!-- TOOLS & PLATFORMS -->
+<!-- ================================================= -->
 
 <text x="65" y="700"
       fill="#ff4dff"
@@ -346,6 +395,16 @@ xmlns="http://www.w3.org/2000/svg">
       font-size="15"
       font-weight="bold">
   TOOLS &amp; PLATFORMS
+</text>
+
+<text x="455" y="700"
+      text-anchor="end"
+      fill="#d000ff"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      filter="url(#glow)">
+  75%
 </text>
 
 <text x="65" y="725"
@@ -366,13 +425,15 @@ xmlns="http://www.w3.org/2000/svg">
       fill="#d000ff"
       filter="url(#glow)">
   <animate attributeName="width"
-           values="0;330;330"
+           values="0;292.5;292.5"
            dur="3s"
            repeatCount="indefinite"/>
 </rect>
 
 
-<!-- HARDWARE -->
+<!-- ================================================= -->
+<!-- HARDWARE / SYSTEMS -->
+<!-- ================================================= -->
 
 <text x="545" y="700"
       fill="#ff4dff"
@@ -380,6 +441,16 @@ xmlns="http://www.w3.org/2000/svg">
       font-size="15"
       font-weight="bold">
   HARDWARE / SYSTEMS
+</text>
+
+<text x="935" y="700"
+      text-anchor="end"
+      fill="#d000ff"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      filter="url(#glow)">
+  60%
 </text>
 
 <text x="545" y="725"
@@ -400,7 +471,7 @@ xmlns="http://www.w3.org/2000/svg">
       fill="#d000ff"
       filter="url(#glow)">
   <animate attributeName="width"
-           values="0;260;260"
+           values="0;234;234"
            dur="3s"
            repeatCount="indefinite"/>
 </rect>
@@ -429,5 +500,3 @@ xmlns="http://www.w3.org/2000/svg">
       font-size="11">
   [ ONLINE ]
 </text>
-
-</svg>
