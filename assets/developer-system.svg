@@ -2,197 +2,308 @@
      viewBox="0 0 1000 1500"
      xmlns="http://www.w3.org/2000/svg">
 
-<defs>
+  <defs>
 
-  <!-- BACKGROUND -->
-  <linearGradient id="bg"
-                  x1="0"
-                  y1="0"
-                  x2="1"
-                  y2="1">
+    <!-- ================= BACKGROUND ================= -->
 
-    <stop offset="0%" stop-color="#050008"/>
-    <stop offset="50%" stop-color="#12001d"/>
-    <stop offset="100%" stop-color="#050008"/>
+    <linearGradient id="background"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1">
 
-  </linearGradient>
+      <stop offset="0%" stop-color="#030006"/>
+      <stop offset="50%" stop-color="#100018"/>
+      <stop offset="100%" stop-color="#030006"/>
 
-
-  <!-- GLOW -->
-  <filter id="glow">
-
-    <feGaussianBlur stdDeviation="3"
-                    result="blur"/>
-
-    <feMerge>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-
-  </filter>
+    </linearGradient>
 
 
-  <filter id="strongGlow">
+    <!-- ================= GLOW ================= -->
 
-    <feGaussianBlur stdDeviation="6"
-                    result="blur"/>
+    <filter id="glow"
+            x="-50%"
+            y="-50%"
+            width="200%"
+            height="200%">
 
-    <feMerge>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
+      <feGaussianBlur stdDeviation="3"
+                      result="blur"/>
 
-  </filter>
+      <feMerge>
 
-</defs>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
 
+      </feMerge>
 
-<!-- ================================================= -->
-<!-- MAIN PANEL -->
-<!-- ================================================= -->
-
-<rect x="12"
-      y="12"
-      width="976"
-      height="1476"
-      rx="18"
-      fill="url(#bg)"
-      stroke="#a900ff"
-      stroke-width="2"
-      filter="url(#glow)"/>
+    </filter>
 
 
-<!-- INNER BORDER -->
+    <filter id="bigGlow"
+            x="-50%"
+            y="-50%"
+            width="200%"
+            height="200%">
 
-<rect x="25"
-      y="25"
-      width="950"
-      height="1450"
-      rx="12"
-      fill="none"
-      stroke="#5f00a8"
-      opacity="0.7"/>
+      <feGaussianBlur stdDeviation="6"
+                      result="blur"/>
 
+      <feMerge>
 
-<!-- ================================================= -->
-<!-- CYBERPUNK CORNERS -->
-<!-- ================================================= -->
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
 
-<path d="M45 110 V45 H120"
-      fill="none"
-      stroke="#d000ff"
-      stroke-width="4"
-      filter="url(#strongGlow)"/>
+      </feMerge>
 
-<path d="M880 45 H955 V110"
-      fill="none"
-      stroke="#d000ff"
-      stroke-width="4"
-      filter="url(#strongGlow)"/>
-
-<path d="M45 1390 V1455 H120"
-      fill="none"
-      stroke="#d000ff"
-      stroke-width="4"
-      filter="url(#strongGlow)"/>
-
-<path d="M880 1455 H955 V1390"
-      fill="none"
-      stroke="#d000ff"
-      stroke-width="4"
-      filter="url(#strongGlow)"/>
+    </filter>
 
 
-<!-- ================================================= -->
-<!-- SECTION 01 : DEVELOPER PROFILE -->
-<!-- ================================================= -->
+    <!-- ================= SCAN GRADIENT ================= -->
 
-<text x="55"
-      y="75"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="20"
-      font-weight="bold"
-      letter-spacing="4"
-      filter="url(#glow)">
+    <linearGradient id="scanLine"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="0">
 
-  // DEVELOPER PROFILE
+      <stop offset="0%"
+            stop-color="#d000ff"
+            stop-opacity="0"/>
 
-</text>
+      <stop offset="50%"
+            stop-color="#d000ff"
+            stop-opacity="0.9"/>
 
+      <stop offset="100%"
+            stop-color="#d000ff"
+            stop-opacity="0"/>
 
-<text x="945"
-      y="75"
-      text-anchor="end"
-      fill="#8f38b8"
-      font-family="monospace"
-      font-size="11"
-      letter-spacing="2">
+    </linearGradient>
 
-  PROFILE_LOADED
-
-</text>
+  </defs>
 
 
-<line x1="55"
-      y1="95"
-      x2="945"
-      y2="95"
-      stroke="#7b00c7"/>
+  <!-- ================================================= -->
+  <!-- MAIN BACKGROUND -->
+  <!-- ================================================= -->
+
+  <rect x="10"
+        y="10"
+        width="980"
+        height="1480"
+        rx="18"
+        fill="url(#background)"
+        stroke="#a900ff"
+        stroke-width="2"
+        filter="url(#glow)"/>
 
 
-<!-- PROFILE DATA -->
+  <!-- ================================================= -->
+  <!-- INNER BORDER -->
+  <!-- ================================================= -->
 
-<g font-family="monospace"
-   font-size="16">
+  <rect x="25"
+        y="25"
+        width="950"
+        height="1450"
+        rx="12"
+        fill="none"
+        stroke="#5f00a8"
+        stroke-width="1"/>
 
-  <text x="65" y="140" fill="#ff4dff">
+
+  <!-- ================================================= -->
+  <!-- CYBERPUNK CORNERS -->
+  <!-- ================================================= -->
+
+  <path d="M45 110 V45 H120"
+        fill="none"
+        stroke="#d000ff"
+        stroke-width="4"
+        filter="url(#bigGlow)"/>
+
+  <path d="M880 45 H955 V110"
+        fill="none"
+        stroke="#d000ff"
+        stroke-width="4"
+        filter="url(#bigGlow)"/>
+
+  <path d="M45 1390 V1455 H120"
+        fill="none"
+        stroke="#d000ff"
+        stroke-width="4"
+        filter="url(#bigGlow)"/>
+
+  <path d="M880 1455 H955 V1390"
+        fill="none"
+        stroke="#d000ff"
+        stroke-width="4"
+        filter="url(#bigGlow)"/>
+
+
+  <!-- ================================================= -->
+  <!-- SECTION 01 : DEVELOPER PROFILE -->
+  <!-- ================================================= -->
+
+  <text x="55"
+        y="75"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="20"
+        font-weight="bold"
+        letter-spacing="4"
+        filter="url(#glow)">
+
+    // DEVELOPER PROFILE
+
+  </text>
+
+
+  <text x="945"
+        y="75"
+        text-anchor="end"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="11"
+        letter-spacing="2">
+
+    PROFILE_LOADED
+
+  </text>
+
+
+  <line x1="55"
+        y1="95"
+        x2="945"
+        y2="95"
+        stroke="#7b00c7"/>
+
+
+  <!-- NAME -->
+
+  <text x="65"
+        y="140"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
     NAME
+
   </text>
 
-  <text x="200" y="140" fill="#7b00c7">
+  <text x="200"
+        y="140"
+        fill="#7b00c7"
+        font-family="monospace"
+        font-size="15">
+
     :
+
   </text>
 
-  <text x="225" y="140" fill="#f2d9ff">
+  <text x="225"
+        y="140"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="15">
+
     GAYATHRI
+
   </text>
 
 
-  <text x="65" y="185" fill="#ff4dff">
+  <!-- ROLE -->
+
+  <text x="65"
+        y="185"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
     ROLE
+
   </text>
 
-  <text x="200" y="185" fill="#7b00c7">
+  <text x="200"
+        y="185"
+        fill="#7b00c7"
+        font-family="monospace"
+        font-size="15">
+
     :
+
   </text>
 
-  <text x="225" y="185" fill="#f2d9ff">
+  <text x="225"
+        y="185"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="15">
+
     INFORMATION SCIENCE ENGINEER
+
   </text>
 
 
-  <text x="65" y="230" fill="#ff4dff">
+  <!-- DOMAIN -->
+
+  <text x="65"
+        y="230"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
     DOMAIN
+
   </text>
 
-  <text x="200" y="230" fill="#7b00c7">
+  <text x="200"
+        y="230"
+        fill="#7b00c7"
+        font-family="monospace"
+        font-size="15">
+
     :
+
   </text>
 
-  <text x="225" y="230" fill="#f2d9ff">
+  <text x="225"
+        y="230"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="15">
+
     AI / ML / COMPUTER VISION
+
   </text>
 
 
-  <text x="65" y="275" fill="#ff4dff">
+  <!-- STATUS -->
+
+  <text x="65"
+        y="275"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
     STATUS
+
   </text>
 
-  <text x="200" y="275" fill="#7b00c7">
+  <text x="200"
+        y="275"
+        fill="#7b00c7"
+        font-family="monospace"
+        font-size="15">
+
     :
-  </text>
 
+  </text>
 
   <circle cx="230"
           cy="270"
@@ -207,915 +318,910 @@
 
   </circle>
 
-
   <text x="245"
         y="275"
-        fill="#d000ff">
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="15">
 
     BUILDING
 
   </text>
 
 
+  <!-- MISSION -->
+
   <text x="65"
         y="325"
-        fill="#ff4dff">
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
 
     MISSION
 
   </text>
 
-
   <text x="200"
         y="325"
-        fill="#7b00c7">
+        fill="#7b00c7"
+        font-family="monospace"
+        font-size="15">
 
     :
 
   </text>
 
-
   <text x="225"
         y="325"
-        fill="#f2d9ff">
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="15">
 
     LEARN → BUILD → EXPERIMENT → REPEAT
 
   </text>
 
-</g>
 
+  <!-- ================================================= -->
+  <!-- DIVIDER -->
+  <!-- ================================================= -->
 
-<!-- ================================================= -->
-<!-- DIVIDER -->
-<!-- ================================================= -->
+  <line x1="55"
+        y1="365"
+        x2="945"
+        y2="365"
+        stroke="#7b00c7"/>
 
-<line x1="55"
-      y1="365"
-      x2="945"
-      y2="365"
-      stroke="#7b00c7"/>
 
+  <!-- ================================================= -->
+  <!-- SECTION 02 : SKILL MATRIX -->
+  <!-- ================================================= -->
 
-<!-- ================================================= -->
-<!-- SECTION 02 : SKILL MATRIX -->
-<!-- ================================================= -->
+  <text x="55"
+        y="415"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="20"
+        font-weight="bold"
+        letter-spacing="4"
+        filter="url(#glow)">
 
-<text x="55"
-      y="415"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="20"
-      font-weight="bold"
-      letter-spacing="4"
-      filter="url(#glow)">
+    // SKILL MATRIX
 
-  // SKILL MATRIX
+  </text>
 
-</text>
 
+  <text x="945"
+        y="415"
+        text-anchor="end"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="11"
+        letter-spacing="2">
 
-<text x="945"
-      y="415"
-      text-anchor="end"
-      fill="#8f38b8"
-      font-family="monospace"
-      font-size="11"
-      letter-spacing="2">
+    CAPABILITY_SCAN
 
-  CAPABILITY_SCAN
+  </text>
 
-</text>
 
+  <line x1="55"
+        y1="435"
+        x2="945"
+        y2="435"
+        stroke="#7b00c7"/>
 
-<line x1="55"
-      y1="435"
-      x2="945"
-      y2="435"
-      stroke="#7b00c7"/>
 
+  <!-- ================= AI ================= -->
 
-<!-- ================================================= -->
-<!-- AI / ML -->
-<!-- ================================================= -->
+  <text x="65"
+        y="475"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="14"
+        font-weight="bold">
 
-<text x="65"
-      y="475"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="14"
-      font-weight="bold">
+    AI / MACHINE LEARNING
 
-  AI / MACHINE LEARNING
+  </text>
 
-</text>
+  <text x="455"
+        y="475"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="14"
+        font-weight="bold">
 
+    75%
 
-<text x="455"
-      y="475"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="14"
-      font-weight="bold">
+  </text>
 
-  75%
 
-</text>
+  <text x="65"
+        y="500"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="11">
 
+    Python • Deep Learning • YOLO • OCR
 
-<text x="65"
-      y="500"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="11">
+  </text>
 
-  Python • Deep Learning • YOLO • OCR
 
-</text>
+  <rect x="65"
+        y="515"
+        width="390"
+        height="8"
+        rx="4"
+        fill="#22002f"/>
 
 
-<rect x="65"
-      y="515"
-      width="390"
-      height="8"
-      rx="4"
-      fill="#22002f"/>
+  <rect x="65"
+        y="515"
+        width="0"
+        height="8"
+        rx="4"
+        fill="#d000ff"
+        filter="url(#glow)">
 
+    <animate attributeName="width"
+             values="0;292.5;292.5"
+             dur="3s"
+             repeatCount="indefinite"/>
 
-<rect x="65"
-      y="515"
-      width="0"
-      height="8"
-      rx="4"
-      fill="#d000ff"
-      filter="url(#glow)">
+  </rect>
 
-  <animate attributeName="width"
-           values="0;292.5;292.5"
-           dur="3s"
-           repeatCount="indefinite"/>
 
-</rect>
+  <!-- ================= COMPUTER VISION ================= -->
 
+  <text x="545"
+        y="475"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="14"
+        font-weight="bold">
 
-<!-- ================================================= -->
-<!-- COMPUTER VISION -->
-<!-- ================================================= -->
+    COMPUTER VISION
 
-<text x="545"
-      y="475"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="14"
-      font-weight="bold">
+  </text>
 
-  COMPUTER VISION
+  <text x="935"
+        y="475"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="14"
+        font-weight="bold">
 
-</text>
+    80%
 
+  </text>
 
-<text x="935"
-      y="475"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="14"
-      font-weight="bold">
 
-  80%
+  <text x="545"
+        y="500"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="11">
 
-</text>
+    Face Recognition • Detection • Image AI
 
+  </text>
 
-<text x="545"
-      y="500"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="11">
 
-  Face Recognition • Detection • Image AI
+  <rect x="545"
+        y="515"
+        width="390"
+        height="8"
+        rx="4"
+        fill="#22002f"/>
 
-</text>
 
+  <rect x="545"
+        y="515"
+        width="0"
+        height="8"
+        rx="4"
+        fill="#d000ff"
+        filter="url(#glow)">
 
-<rect x="545"
-      y="515"
-      width="390"
-      height="8"
-      rx="4"
-      fill="#22002f"/>
+    <animate attributeName="width"
+             values="0;312;312"
+             dur="3s"
+             repeatCount="indefinite"/>
 
+  </rect>
 
-<rect x="545"
-      y="515"
-      width="0"
-      height="8"
-      rx="4"
-      fill="#d000ff"
-      filter="url(#glow)">
 
-  <animate attributeName="width"
-           values="0;312;312"
-           dur="3s"
-           repeatCount="indefinite"/>
+  <!-- ================= PROGRAMMING ================= -->
 
-</rect>
+  <text x="65"
+        y="570"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="14"
+        font-weight="bold">
 
+    PROGRAMMING
 
-<!-- ================================================= -->
-<!-- PROGRAMMING -->
-<!-- ================================================= -->
+  </text>
 
-<text x="65"
-      y="570"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="14"
-      font-weight="bold">
+  <text x="455"
+        y="570"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="14"
+        font-weight="bold">
 
-  PROGRAMMING
+    70%
 
-</text>
+  </text>
 
 
-<text x="455"
-      y="570"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="14"
-      font-weight="bold">
+  <text x="65"
+        y="595"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="11">
 
-  70%
+    Python • Java • JavaScript • C++
 
-</text>
+  </text>
 
 
-<text x="65"
-      y="595"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="11">
+  <rect x="65"
+        y="610"
+        width="390"
+        height="8"
+        rx="4"
+        fill="#22002f"/>
 
-  Python • Java • JavaScript • C++
 
-</text>
+  <rect x="65"
+        y="610"
+        width="0"
+        height="8"
+        rx="4"
+        fill="#d000ff"
+        filter="url(#glow)">
 
+    <animate attributeName="width"
+             values="0;273;273"
+             dur="3s"
+             repeatCount="indefinite"/>
 
-<rect x="65"
-      y="610"
-      width="390"
-      height="8"
-      rx="4"
-      fill="#22002f"/>
+  </rect>
 
 
-<rect x="65"
-      y="610"
-      width="0"
-      height="8"
-      rx="4"
-      fill="#d000ff"
-      filter="url(#glow)">
+  <!-- ================= WEB ================= -->
 
-  <animate attributeName="width"
-           values="0;273;273"
-           dur="3s"
-           repeatCount="indefinite"/>
+  <text x="545"
+        y="570"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="14"
+        font-weight="bold">
 
-</rect>
+    WEB DEVELOPMENT
 
+  </text>
 
-<!-- ================================================= -->
-<!-- WEB -->
-<!-- ================================================= -->
+  <text x="935"
+        y="570"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="14"
+        font-weight="bold">
 
-<text x="545"
-      y="570"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="14"
-      font-weight="bold">
+    70%
 
-  WEB DEVELOPMENT
+  </text>
 
-</text>
 
+  <text x="545"
+        y="595"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="11">
 
-<text x="935"
-      y="570"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="14"
-      font-weight="bold">
+    React • Flask • HTML • CSS • Vite
 
-  70%
+  </text>
 
-</text>
 
+  <rect x="545"
+        y="610"
+        width="390"
+        height="8"
+        rx="4"
+        fill="#22002f"/>
 
-<text x="545"
-      y="595"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="11">
 
-  React • Flask • HTML • CSS • Vite
+  <rect x="545"
+        y="610"
+        width="0"
+        height="8"
+        rx="4"
+        fill="#d000ff"
+        filter="url(#glow)">
 
-</text>
+    <animate attributeName="width"
+             values="0;273;273"
+             dur="3s"
+             repeatCount="indefinite"/>
 
+  </rect>
 
-<rect x="545"
-      y="610"
-      width="390"
-      height="8"
-      rx="4"
-      fill="#22002f"/>
 
+  <!-- ================= TOOLS ================= -->
 
-<rect x="545"
-      y="610"
-      width="0"
-      height="8"
-      rx="4"
-      fill="#d000ff"
-      filter="url(#glow)">
+  <text x="65"
+        y="665"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="14"
+        font-weight="bold">
 
-  <animate attributeName="width"
-           values="0;273;273"
-           dur="3s"
-           repeatCount="indefinite"/>
+    TOOLS &amp; PLATFORMS
 
-</rect>
+  </text>
 
+  <text x="455"
+        y="665"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="14"
+        font-weight="bold">
 
-<!-- ================================================= -->
-<!-- TOOLS -->
-<!-- ================================================= -->
+    75%
 
-<text x="65"
-      y="665"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="14"
-      font-weight="bold">
+  </text>
 
-  TOOLS &amp; PLATFORMS
 
-</text>
+  <text x="65"
+        y="690"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="11">
 
+    Git • GitHub • Firebase • Vercel • VS Code
 
-<text x="455"
-      y="665"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="14"
-      font-weight="bold">
+  </text>
 
-  75%
 
-</text>
+  <rect x="65"
+        y="705"
+        width="390"
+        height="8"
+        rx="4"
+        fill="#22002f"/>
 
 
-<text x="65"
-      y="690"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="11">
+  <rect x="65"
+        y="705"
+        width="0"
+        height="8"
+        rx="4"
+        fill="#d000ff"
+        filter="url(#glow)">
 
-  Git • GitHub • Firebase • Vercel • VS Code
+    <animate attributeName="width"
+             values="0;292.5;292.5"
+             dur="3s"
+             repeatCount="indefinite"/>
 
-</text>
+  </rect>
 
 
-<rect x="65"
-      y="705"
-      width="390"
-      height="8"
-      rx="4"
-      fill="#22002f"/>
+  <!-- ================= HARDWARE ================= -->
 
+  <text x="545"
+        y="665"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="14"
+        font-weight="bold">
 
-<rect x="65"
-      y="705"
-      width="0"
-      height="8"
-      rx="4"
-      fill="#d000ff"
-      filter="url(#glow)">
+    HARDWARE / SYSTEMS
 
-  <animate attributeName="width"
-           values="0;292.5;292.5"
-           dur="3s"
-           repeatCount="indefinite"/>
+  </text>
 
-</rect>
+  <text x="935"
+        y="665"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="14"
+        font-weight="bold">
 
+    60%
 
-<!-- ================================================= -->
-<!-- HARDWARE -->
-<!-- ================================================= -->
+  </text>
 
-<text x="545"
-      y="665"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="14"
-      font-weight="bold">
 
-  HARDWARE / SYSTEMS
+  <text x="545"
+        y="690"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="11">
 
-</text>
+    Raspberry Pi • Linux • IoT
 
+  </text>
 
-<text x="935"
-      y="665"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="14"
-      font-weight="bold">
 
-  60%
+  <rect x="545"
+        y="705"
+        width="390"
+        height="8"
+        rx="4"
+        fill="#22002f"/>
 
-</text>
 
+  <rect x="545"
+        y="705"
+        width="0"
+        height="8"
+        rx="4"
+        fill="#d000ff"
+        filter="url(#glow)">
 
-<text x="545"
-      y="690"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="11">
+    <animate attributeName="width"
+             values="0;234;234"
+             dur="3s"
+             repeatCount="indefinite"/>
 
-  Raspberry Pi • Linux • IoT
+  </rect>
 
-</text>
 
+  <!-- ================================================= -->
+  <!-- DIVIDER -->
+  <!-- ================================================= -->
 
-<rect x="545"
-      y="705"
-      width="390"
-      height="8"
-      rx="4"
-      fill="#22002f"/>
+  <line x1="55"
+        y1="750"
+        x2="945"
+        y2="750"
+        stroke="#7b00c7"/>
 
 
-<rect x="545"
-      y="705"
-      width="0"
-      height="8"
-      rx="4"
-      fill="#d000ff"
-      filter="url(#glow)">
+  <!-- ================================================= -->
+  <!-- SECTION 03 : EDUCATION -->
+  <!-- ================================================= -->
 
-  <animate attributeName="width"
-           values="0;234;234"
-           dur="3s"
-           repeatCount="indefinite"/>
+  <text x="55"
+        y="800"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="20"
+        font-weight="bold"
+        letter-spacing="4"
+        filter="url(#glow)">
 
-</rect>
+    // EDUCATION
 
+  </text>
 
-<!-- ================================================= -->
-<!-- DIVIDER -->
-<!-- ================================================= -->
 
-<line x1="55"
-      y1="750"
-      x2="945"
-      y2="750"
-      stroke="#7b00c7"/>
+  <text x="945"
+        y="800"
+        text-anchor="end"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="11"
+        letter-spacing="2">
 
+    ACADEMIC_RECORD
 
-<!-- ================================================= -->
-<!-- SECTION 03 : EDUCATION -->
-<!-- ================================================= -->
+  </text>
 
-<text x="55"
-      y="800"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="20"
-      font-weight="bold"
-      letter-spacing="4"
-      filter="url(#glow)">
 
-  // EDUCATION
+  <line x1="55"
+        y1="820"
+        x2="945"
+        y2="820"
+        stroke="#7b00c7"/>
 
-</text>
 
+  <!-- BTECH -->
 
-<text x="945"
-      y="800"
-      text-anchor="end"
-      fill="#8f38b8"
-      font-family="monospace"
-      font-size="11"
-      letter-spacing="2">
+  <text x="65"
+        y="865"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
 
-  ACADEMIC_RECORD
+    BTECH
 
-</text>
+  </text>
 
 
-<line x1="55"
-      y1="820"
-      x2="945"
-      y2="820"
-      stroke="#7b00c7"/>
+  <text x="220"
+        y="865"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="14">
 
+    YENEPOYA INSTITUTE OF TECHNOLOGY
 
-<!-- BTECH -->
+  </text>
 
-<text x="65"
-      y="865"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="15"
-      font-weight="bold">
 
-  BTECH
+  <text x="220"
+        y="890"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="11">
 
-</text>
+    INFORMATION SCIENCE ENGINEERING
 
+  </text>
 
-<text x="220"
-      y="865"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="14">
 
-  YENEPOYA INSTITUTE OF TECHNOLOGY
+  <text x="925"
+        y="865"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="13">
 
-</text>
+    CGPA : 5.77 / 10
 
+  </text>
 
-<text x="220"
-      y="890"
-      fill="#8f38b8"
-      font-family="monospace"
-      font-size="11">
 
-  INFORMATION SCIENCE ENGINEERING
+  <!-- PU -->
 
-</text>
+  <text x="65"
+        y="945"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
 
+    PU
 
-<text x="925"
-      y="865"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="13">
+  </text>
 
-  CGPA : 5.77 / 10
 
-</text>
+  <text x="220"
+        y="945"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="14">
 
+    GOVT PU COLLEGE, SURATHKAL
 
-<!-- PU -->
+  </text>
 
-<text x="65"
-      y="945"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="15"
-      font-weight="bold">
 
-  PU
+  <text x="925"
+        y="945"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="13">
 
-</text>
+    69.33%
 
+  </text>
 
-<text x="220"
-      y="945"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="14">
 
-  GOVT PU COLLEGE, SURATHKAL
+  <!-- SSLC -->
 
-</text>
+  <text x="65"
+        y="1010"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
 
+    SSLC
 
-<text x="925"
-      y="945"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="13">
+  </text>
 
-  69.33%
 
-</text>
+  <text x="220"
+        y="1010"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="14">
 
+    GOVT HIGH SCHOOL, SURATHKAL
 
-<!-- SSLC -->
+  </text>
 
-<text x="65"
-      y="1010"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="15"
-      font-weight="bold">
 
-  SSLC
+  <text x="925"
+        y="1010"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="13">
 
-</text>
+    67.36%
 
+  </text>
 
-<text x="220"
-      y="1010"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="14">
 
-  GOVT HIGH SCHOOL, SURATHKAL
+  <!-- ================================================= -->
+  <!-- DIVIDER -->
+  <!-- ================================================= -->
 
-</text>
+  <line x1="55"
+        y1="1050"
+        x2="945"
+        y2="1050"
+        stroke="#7b00c7"/>
 
 
-<text x="925"
-      y="1010"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="13">
+  <!-- ================================================= -->
+  <!-- SECTION 04 : NETWORK -->
+  <!-- ================================================= -->
 
-  67.36%
+  <text x="55"
+        y="1100"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="20"
+        font-weight="bold"
+        letter-spacing="4"
+        filter="url(#glow)">
 
-</text>
+    // NETWORK
 
+  </text>
 
-<!-- ================================================= -->
-<!-- DIVIDER -->
-<!-- ================================================= -->
 
-<line x1="55"
-      y1="1050"
-      x2="945"
-      y2="1050"
-      stroke="#7b00c7"/>
+  <text x="945"
+        y="1100"
+        text-anchor="end"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="11"
+        letter-spacing="2">
 
+    CONNECTIONS_ACTIVE
 
-<!-- ================================================= -->
-<!-- SECTION 04 : NETWORK -->
-<!-- ================================================= -->
+  </text>
 
-<text x="55"
-      y="1100"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="20"
-      font-weight="bold"
-      letter-spacing="4"
-      filter="url(#glow)">
 
-  // NETWORK
+  <line x1="55"
+        y1="1120"
+        x2="945"
+        y2="1120"
+        stroke="#7b00c7"/>
 
-</text>
 
-<text x="945"
-      y="1100"
-      text-anchor="end"
-      fill="#8f38b8"
-      font-family="monospace"
-      font-size="11"
-      letter-spacing="2">
+  <!-- NETWORK HEADER -->
 
-  CONNECTIONS_ACTIVE
+  <text x="65"
+        y="1160"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="10"
+        letter-spacing="2">
 
-</text>
+    CHANNEL
 
-<line x1="55"
-      y1="1120"
-      x2="945"
-      y2="1120"
-      stroke="#7b00c7"/>
+  </text>
 
 
-<!-- ================================================= -->
-<!-- NETWORK HEADER -->
-<!-- ================================================= -->
+  <text x="250"
+        y="1160"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="10"
+        letter-spacing="2">
 
-<text x="65"
-      y="1160"
-      fill="#8f38b8"
-      font-family="monospace"
-      font-size="11"
-      letter-spacing="2">
+    ADDRESS
 
-  CHANNEL
+  </text>
 
-</text>
 
-<text x="250"
-      y="1160"
-      fill="#8f38b8"
-      font-family="monospace"
-      font-size="11"
-      letter-spacing="2">
+  <text x="925"
+        y="1160"
+        text-anchor="end"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="10"
+        letter-spacing="2">
 
-  ADDRESS
+    STATUS
 
-</text>
+  </text>
 
-<text x="925"
-      y="1160"
-      text-anchor="end"
-      fill="#8f38b8"
-      font-family="monospace"
-      font-size="11"
-      letter-spacing="2">
 
-  STATUS
+  <!-- GITHUB -->
 
-</text>
+  <text x="65"
+        y="1205"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
 
+    GITHUB
 
-<!-- ================================================= -->
-<!-- GITHUB -->
-<!-- ================================================= -->
+  </text>
 
-<text x="65"
-      y="1205"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="15"
-      font-weight="bold">
 
-  GITHUB
+  <text x="250"
+        y="1205"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="13">
 
-</text>
+    github.com/GAYATHRI14-DO
 
-<text x="250"
-      y="1205"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="13">
+  </text>
 
-  github.com/GAYATHRI14-DO
 
-</text>
+  <text x="925"
+        y="1205"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="12"
+        font-weight="bold">
 
-<text x="925"
-      y="1205"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="12"
-      font-weight="bold">
+    [ OPEN ↗ ]
 
-  [ OPEN ↗ ]
+  </text>
 
-</text>
 
+  <!-- LINKEDIN -->
 
-<!-- ================================================= -->
-<!-- LINKEDIN -->
-<!-- ================================================= -->
+  <text x="65"
+        y="1265"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
 
-<text x="65"
-      y="1265"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="15"
-      font-weight="bold">
+    LINKEDIN
 
-  LINKEDIN
+  </text>
 
-</text>
 
-<text x="250"
-      y="1265"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="13">
+  <text x="250"
+        y="1265"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="12">
 
-  linkedin.com/in/gayathri-93ab2a310/
+    linkedin.com/in/gayathri-93ab2a310/
 
-</text>
+  </text>
 
-<text x="925"
-      y="1265"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="12"
-      font-weight="bold">
 
-  [ OPEN ↗ ]
+  <text x="925"
+        y="1265"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="12"
+        font-weight="bold">
 
-</text>
+    [ OPEN ↗ ]
 
+  </text>
 
-<!-- ================================================= -->
-<!-- PHONE -->
-<!-- ================================================= -->
 
-<text x="65"
-      y="1325"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="15"
-      font-weight="bold">
+  <!-- PHONE -->
 
-  PHONE
+  <text x="65"
+        y="1325"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
 
-</text>
+    PHONE
 
-<text x="250"
-      y="1325"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="13">
+  </text>
 
-  +91 70198 95177
 
-</text>
+  <text x="250"
+        y="1325"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="13">
 
-<text x="925"
-      y="1325"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="12"
-      font-weight="bold">
+    +91 70198 95177
 
-  [ AVAILABLE ]
+  </text>
 
-</text>
 
+  <text x="925"
+        y="1325"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="12"
+        font-weight="bold">
 
-<!-- ================================================= -->
-<!-- EMAIL -->
-<!-- ================================================= -->
+    [ AVAILABLE ]
 
-<text x="65"
-      y="1385"
-      fill="#ff4dff"
-      font-family="monospace"
-      font-size="15"
-      font-weight="bold">
+  </text>
 
-  EMAIL
 
-</text>
+  <!-- EMAIL -->
 
-<text x="250"
-      y="1385"
-      fill="#f2d9ff"
-      font-family="monospace"
-      font-size="13">
+  <text x="65"
+        y="1385"
+        fill="#ff4dff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
 
-  gayathriyit6@gmail.com
+    EMAIL
 
-</text>
+  </text>
 
-<text x="925"
-      y="1385"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="12"
-      font-weight="bold">
 
-  [ CONTACT ]
+  <text x="250"
+        y="1385"
+        fill="#f2d9ff"
+        font-family="monospace"
+        font-size="13">
 
-</text>
+    gayathriyit6@gmail.com
 
+  </text>
 
-<!-- ================================================= -->
-<!-- NETWORK FOOTER -->
-<!-- ================================================= -->
 
-<line x1="55"
-      y1="1420"
-      x2="945"
-      y2="1420"
-      stroke="#5f00a8"/>
+  <text x="925"
+        y="1385"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="12"
+        font-weight="bold">
 
-<text x="55"
-      y="1450"
-      fill="#8f38b8"
-      font-family="monospace"
-      font-size="10"
-      letter-spacing="2">
+    [ CONTACT ]
 
-  NETWORK_STATUS // 4 CHANNELS DETECTED
+  </text>
 
-</text>
 
-<text x="945"
-      y="1450"
-      text-anchor="end"
-      fill="#d000ff"
-      font-family="monospace"
-      font-size="10">
+  <!-- ================================================= -->
+  <!-- FINAL FOOTER -->
+  <!-- ================================================= -->
 
-  [ ONLINE ]
+  <line x1="55"
+        y1="1420"
+        x2="945"
+        y2="1420"
+        stroke="#5f00a8"/>
 
-</text>
+
+  <text x="55"
+        y="1450"
+        fill="#8f38b8"
+        font-family="monospace"
+        font-size="10"
+        letter-spacing="2">
+
+    SYSTEM LOG // ALL MODULES ACTIVE
+
+  </text>
+
+
+  <text x="945"
+        y="1450"
+        text-anchor="end"
+        fill="#d000ff"
+        font-family="monospace"
+        font-size="10">
+
+    [ ONLINE ]
+
+  </text>
+
+
+</svg>
