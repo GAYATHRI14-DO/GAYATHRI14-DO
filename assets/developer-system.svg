@@ -237,15 +237,9 @@
   </text>
 
 
-   <!-- ================================================= -->
+  <!-- ================================================= -->
   <!-- SKILL MATRIX -->
   <!-- ================================================= -->
-
-  <line x1="55"
-        y1="350"
-        x2="945"
-        y2="350"
-        stroke="#5f00a8"/>
 
   <text x="55"
         y="400"
@@ -306,7 +300,6 @@
     75%
   </text>
 
-  <!-- Background -->
   <rect x="65"
         y="500"
         width="390"
@@ -314,7 +307,6 @@
         rx="4"
         fill="#22002f"/>
 
-  <!-- 75% = 292.5px -->
   <rect x="65"
         y="500"
         width="0"
@@ -322,10 +314,12 @@
         rx="4"
         fill="#d000ff"
         filter="url(#glow)">
+
     <animate attributeName="width"
              values="0;292.5;292.5"
              dur="3s"
              repeatCount="indefinite"/>
+
   </rect>
 
 
@@ -360,7 +354,6 @@
     60%
   </text>
 
-  <!-- Background -->
   <rect x="545"
         y="500"
         width="390"
@@ -368,7 +361,6 @@
         rx="4"
         fill="#22002f"/>
 
-  <!-- 60% = 234px -->
   <rect x="545"
         y="500"
         width="0"
@@ -376,10 +368,12 @@
         rx="4"
         fill="#d000ff"
         filter="url(#glow)">
+
     <animate attributeName="width"
              values="0;234;234"
              dur="3s"
              repeatCount="indefinite"/>
+
   </rect>
 
 
@@ -414,7 +408,6 @@
     60%
   </text>
 
-  <!-- Background -->
   <rect x="65"
         y="600"
         width="390"
@@ -422,7 +415,6 @@
         rx="4"
         fill="#22002f"/>
 
-  <!-- 60% = 234px -->
   <rect x="65"
         y="600"
         width="0"
@@ -430,10 +422,12 @@
         rx="4"
         fill="#d000ff"
         filter="url(#glow)">
+
     <animate attributeName="width"
              values="0;234;234"
              dur="3s"
              repeatCount="indefinite"/>
+
   </rect>
 
 
@@ -468,7 +462,6 @@
     85%
   </text>
 
-  <!-- Background -->
   <rect x="545"
         y="600"
         width="390"
@@ -476,7 +469,6 @@
         rx="4"
         fill="#22002f"/>
 
-  <!-- 85% = 331.5px -->
   <rect x="545"
         y="600"
         width="0"
@@ -484,10 +476,12 @@
         rx="4"
         fill="#d000ff"
         filter="url(#glow)">
+
     <animate attributeName="width"
              values="0;331.5;331.5"
              dur="3s"
              repeatCount="indefinite"/>
+
   </rect>
 
 
@@ -522,7 +516,6 @@
     83%
   </text>
 
-  <!-- Background -->
   <rect x="65"
         y="700"
         width="390"
@@ -530,7 +523,6 @@
         rx="4"
         fill="#22002f"/>
 
-  <!-- 83% = 323.7px -->
   <rect x="65"
         y="700"
         width="0"
@@ -538,10 +530,12 @@
         rx="4"
         fill="#d000ff"
         filter="url(#glow)">
+
     <animate attributeName="width"
              values="0;323.7;323.7"
              dur="3s"
              repeatCount="indefinite"/>
+
   </rect>
 
 
@@ -576,7 +570,6 @@
     50%
   </text>
 
-  <!-- Background -->
   <rect x="545"
         y="700"
         width="390"
@@ -584,7 +577,6 @@
         rx="4"
         fill="#22002f"/>
 
-  <!-- 50% = 195px -->
   <rect x="545"
         y="700"
         width="0"
@@ -592,10 +584,12 @@
         rx="4"
         fill="#d000ff"
         filter="url(#glow)">
+
     <animate attributeName="width"
              values="0;195;195"
              dur="3s"
              repeatCount="indefinite"/>
+
   </rect>
 
 
