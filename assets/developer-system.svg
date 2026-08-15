@@ -4,7 +4,10 @@
 
   <defs>
 
+    <!-- ================================================= -->
     <!-- NEON GLOW -->
+    <!-- ================================================= -->
+
     <filter id="glow"
             x="-50%"
             y="-50%"
@@ -22,7 +25,10 @@
     </filter>
 
 
+    <!-- ================================================= -->
     <!-- SOFT GLOW -->
+    <!-- ================================================= -->
+
     <filter id="softGlow"
             x="-50%"
             y="-50%"
@@ -40,7 +46,10 @@
     </filter>
 
 
-    <!-- GRID -->
+    <!-- ================================================= -->
+    <!-- CYBER GRID -->
+    <!-- ================================================= -->
+
     <pattern id="grid"
              width="25"
              height="25"
@@ -69,7 +78,6 @@
         stroke="#d000ff"
         stroke-width="2"
         filter="url(#softGlow)"/>
-
 
   <rect x="20"
         y="20"
@@ -112,7 +120,6 @@
     // DEVELOPER PROFILE
   </text>
 
-
   <text x="945"
         y="70"
         text-anchor="end"
@@ -122,7 +129,6 @@
         letter-spacing="2">
     PROFILE_LOADED
   </text>
-
 
   <line x1="55"
         y1="90"
@@ -206,7 +212,14 @@
           cy="265"
           r="5"
           fill="#d000ff"
-          filter="url(#glow)"/>
+          filter="url(#glow)">
+
+    <animate attributeName="opacity"
+             values="1;0.25;1"
+             dur="1.5s"
+             repeatCount="indefinite"/>
+
+  </circle>
 
   <text x="280"
         y="270"
@@ -235,6 +248,17 @@
         font-size="14">
     : LEARN → BUILD → EXPERIMENT → REPEAT
   </text>
+
+
+  <!-- ================================================= -->
+  <!-- DIVIDER -->
+  <!-- ================================================= -->
+
+  <line x1="55"
+        y1="350"
+        x2="945"
+        y2="350"
+        stroke="#5f00a8"/>
 
 
   <!-- ================================================= -->
@@ -603,7 +627,6 @@
         y2="760"
         stroke="#5f00a8"/>
 
-
   <text x="55"
         y="810"
         fill="#d000ff"
@@ -615,7 +638,6 @@
     // EDUCATION
   </text>
 
-
   <text x="945"
         y="810"
         text-anchor="end"
@@ -625,7 +647,6 @@
         letter-spacing="2">
     ACADEMIC_RECORD
   </text>
-
 
   <line x1="55"
         y1="830"
@@ -650,7 +671,7 @@
         fill="#f2d9ff"
         font-family="monospace"
         font-size="13">
-    INFORMATION SCIENCE & ENGINEERING
+    INFORMATION SCIENCE &amp; ENGINEERING
   </text>
 
   <text x="935"
@@ -731,7 +752,6 @@
         y2="1020"
         stroke="#5f00a8"/>
 
-
   <text x="55"
         y="1070"
         fill="#d000ff"
@@ -743,7 +763,6 @@
     // NETWORK
   </text>
 
-
   <text x="945"
         y="1070"
         text-anchor="end"
@@ -753,7 +772,6 @@
         letter-spacing="2">
     CONNECTIONS_ACTIVE
   </text>
-
 
   <line x1="55"
         y1="1090"
@@ -849,7 +867,7 @@
   </text>
 
 
-  <!-- EMAIL -->
+  <!-- INSTAGRAM -->
 
   <text x="65"
         y="1270"
@@ -857,7 +875,7 @@
         font-family="monospace"
         font-size="13"
         font-weight="bold">
-    EMAIL
+    INSTAGRAM
   </text>
 
   <text x="265"
@@ -865,7 +883,7 @@
         fill="#f2d9ff"
         font-family="monospace"
         font-size="12">
-    gayathriyit6@gmail.com
+    instagram.com/ohh._.easy
   </text>
 
   <text x="935"
@@ -874,7 +892,7 @@
         fill="#d000ff"
         font-family="monospace"
         font-size="11">
-    [ CONTACT ]
+    [ OPEN ↗ ]
   </text>
 
 
@@ -888,7 +906,6 @@
         y2="1320"
         stroke="#5f00a8"/>
 
-
   <text x="55"
         y="1360"
         fill="#8f38b8"
@@ -897,7 +914,6 @@
         letter-spacing="2">
     SYSTEM LOG // PROFILE + CAPABILITIES ACTIVE
   </text>
-
 
   <text x="945"
         y="1360"
@@ -909,7 +925,9 @@
   </text>
 
 
+  <!-- ================================================= -->
   <!-- BOTTOM FRAME -->
+  <!-- ================================================= -->
 
   <path d="M35 1415 L35 1460 L120 1460"
         fill="none"
@@ -922,6 +940,5 @@
         stroke="#d000ff"
         stroke-width="5"
         filter="url(#glow)"/>
-
 
 </svg>
